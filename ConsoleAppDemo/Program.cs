@@ -33,8 +33,8 @@ namespace ConsoleAppDemo
 
       Console.WriteLine("Saved " + path);
 
-      Console.WriteLine("Press [Enter] to exit...");
-      Console.ReadLine();
+      Console.WriteLine("Press any key to exit");
+      Console.ReadKey();
     }
   }
 }
