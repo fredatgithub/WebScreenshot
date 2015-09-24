@@ -1,4 +1,0 @@
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web\bin\Debug\Alx.Web.Screenshot.dll
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web\bin\Debug\Alx.Web.Screenshot.pdb
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web\obj\Debug\Alx.Web.Screenshot.dll
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web\obj\Debug\Alx.Web.Screenshot.pdb

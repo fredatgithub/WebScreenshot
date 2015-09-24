@@ -1,8 +1,0 @@
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\obj\Debug\ConsoleAppDemo.csprojResolveAssemblyReference.cache
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\bin\Debug\ConsoleAppDemo.exe.config
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\bin\Debug\ConsoleAppDemo.exe
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\bin\Debug\ConsoleAppDemo.pdb
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\bin\Debug\Alx.Web.Screenshot.dll
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\bin\Debug\Alx.Web.Screenshot.pdb
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\obj\Debug\ConsoleAppDemo.exe
-C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\ConsoleAppDemo\obj\Debug\ConsoleAppDemo.pdb
