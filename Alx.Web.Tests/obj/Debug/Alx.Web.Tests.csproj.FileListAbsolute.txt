@@ -1,0 +1,8 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\bin\Debug\Alx.Web.Tests.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\bin\Debug\Alx.Web.Screenshot.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\bin\Debug\Alx.Web.Screenshot.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\bin\Debug\fr\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\obj\Debug\Alx.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\obj\Debug\Alx.Web.Tests.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Web.Screenshot\Alx.Web.Tests\obj\Debug\Alx.Web.Tests.pdb
