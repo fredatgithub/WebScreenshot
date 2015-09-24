@@ -9,23 +9,27 @@ namespace ConsoleAppDemo
     static void Main()
     {
       Console.WriteLine("Application started");
-      const string url = "http://www.bbc.co.uk/news";
+      string url = "http://www.bbc.co.uk/news";
 
       var device = Devices.Desktop;
       var path = string.Format(@"C:\Temp\website-{0}.png", device);
-      Alx.Web.Screenshot.Save(url, path, ImageFormat.Png, device);
+      //Screenshot.Save(url, path, ImageFormat.Png, device);
+      Console.WriteLine("Saved " + path);
 
+      url = "http://www.codeproject.com/Articles/1030283/Neat-Tricks-for-Effortlessly-Formatting-Currency-i";
+      path = string.Format(@"C:\Temp\codeProjectArticle1-{0}.png", device);
+      Screenshot.Save(url, path, ImageFormat.Png, device);
       Console.WriteLine("Saved " + path);
 
       device = Devices.TabletLandscape;
-      path = String.Format(@"C:\Temp\website-{0}.png", device);
-      Alx.Web.Screenshot.Save(url, path, ImageFormat.Png, device);
+      path = string.Format(@"C:\Temp\website-{0}.png", device);
+      Screenshot.Save(url, path, ImageFormat.Png, device);
 
       Console.WriteLine("Saved " + path);
 
       device = Devices.PhonePortrait;
-      path = String.Format(@"C:\Temp\website-{0}.png", device);
-      Alx.Web.Screenshot.Save(url, path, ImageFormat.Png, device);
+      path = string.Format(@"C:\Temp\website-{0}.png", device);
+      Screenshot.Save(url, path, ImageFormat.Png, device);
 
       Console.WriteLine("Saved " + path);
 

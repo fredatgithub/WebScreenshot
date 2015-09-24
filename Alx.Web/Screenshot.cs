@@ -83,9 +83,26 @@ namespace Alx.Web
     private static void DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e, ref Image image)
     {
       var browser = sender as WebBrowser;
+      if (browser != null)
+      {
+        browser.Width = 1200;
+        browser.Height = 6000;
+      }
+      
+      if (browser == null)
+      {
+        browser = new WebBrowser
+        {
+          Width = 1200,
+          Height = 6000
+        };
+        //throw new Exception("Sender should be browser");
+      }
 
-      if (browser == null) throw new Exception("Sender should be browser");
-      if (browser.Document == null) throw new Exception("Document is missing");
+      if (browser.Document == null)
+      {
+        throw new Exception("Document is missing");
+      }
       if (browser.Document.Body == null) throw new Exception("Body is missing");
 
       using (var bitmap = new Bitmap(browser.Width, browser.Height))
