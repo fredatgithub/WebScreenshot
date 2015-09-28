@@ -618,9 +618,46 @@ namespace WebBrowserRecorder
       }
     }
 
-    private void AdjustAllControls()
+    private static void AdjustAllControls()
     {
       AdjustControls();
+    }
+
+    private void buttonRecord_Click(object sender, EventArgs e)
+    {
+      if (!listBoxIds.Items.Contains(textBoxUrl.Text.Split('=')[1]))
+      {
+        listBoxIds.Items.Add(textBoxUrl.Text.Split('=')[1]);
+      }
+    }
+
+    private void buttonUrlGo_Click(object sender, EventArgs e)
+    {
+      webBrowserMain.Navigate(textBoxUrl.Text);
+    }
+
+    private void buttonSave_Click(object sender, EventArgs e)
+    {
+      if (listBoxIds.Items.Count != 0)
+      {
+        var sw = new StreamWriter("listOfIDs.txt");
+        foreach (var item in listBoxIds.Items)
+        {
+          sw.Write(item + ", ");
+        }
+
+        sw.Close();
+      }
+    }
+
+    private void webBrowserMain_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+    {
+      if (!listBoxIds.Items.Contains(textBoxUrl.Text.Split('=')[1]))
+      {
+        listBoxIds.Items.Add(textBoxUrl.Text.Split('=')[1]);
+      }
+      
+      textBoxUrl.Text = webBrowserMain.Url.ToString();
     }
   }
 }
