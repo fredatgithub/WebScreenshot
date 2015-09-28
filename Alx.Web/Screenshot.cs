@@ -86,7 +86,7 @@ namespace Alx.Web
       if (browser != null)
       {
         browser.Width = 1200;
-        browser.Height = 6000;
+        browser.Height = 2000;
       }
       
       if (browser == null)
@@ -94,7 +94,7 @@ namespace Alx.Web
         browser = new WebBrowser
         {
           Width = 1200,
-          Height = 6000
+          Height = 2000
         };
         //throw new Exception("Sender should be browser");
       }
