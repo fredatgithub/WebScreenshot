@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Threading;
 using Alx.Web;
 
 namespace ConsoleAppDemo
@@ -13,7 +14,7 @@ namespace ConsoleAppDemo
     {
       Console.WriteLine("Application started");
       string url = "http://www.bbc.co.uk/news";
-      string myImages = AddSlash(Environment.GetEnvironmentVariable("USERPROFILE")) + 
+      string myImages = AddSlash(Environment.GetEnvironmentVariable("USERPROFILE")) +
         Environment.SpecialFolder.MyPictures;
       CreateDirectory(myImages);
       var device = Devices.Desktop;
@@ -94,16 +95,37 @@ namespace ConsoleAppDemo
         4058, 4057, 4056, 4055, 4054, 4053, 4052, 4051, 4050, 4049,
         4048, 4047, 4046, 4045, 147, 148, 150, 144
       };
-      
+      var badUrl = new List<string>();
       foreach (int pictureId in picturesIdList)
       {
         url = "http://www.stephenwiltshire.co.uk/art_gallery.aspx?Id=" + pictureId;
         path = string.Format(AddSlash(myImages) + "StephenWiltshire-{0}.jpeg", pictureId);
-        Screenshot.Save(url, path, ImageFormat.Jpeg, device);
+        Thread.Sleep(1000 * new Random(DateTime.Now.Millisecond).Next(0, 3));
+        try
+        {
+          Screenshot.Save(url, path, ImageFormat.Jpeg, device);
+        }
+        catch (Exception)
+        {
+          badUrl.Add(url);
+          Console.WriteLine("bad url: " + pictureId);
+        }
+
         Console.WriteLine(pictureId);
         //OpenImage(path);
       }
 
+      if (badUrl.Count != 0)
+      {
+        var sw = new StreamWriter("badurl.txt");
+        foreach (string item in badUrl)
+        {
+          sw.WriteLine(item);
+        }
+
+        sw.Close();
+        Console.WriteLine("a badurl text file has been written to list all bad URL");
+      }
       Console.WriteLine("Press any key to exit");
       Console.ReadKey();
     }
